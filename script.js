@@ -17,7 +17,7 @@ let numberOfParticles=5000;
  class Particle{
      constructor(){
      this.x=Math.random() * canvas.width;
-     this.y=0;
+     this.y=1;
      this.speed=0;
      this.velocity=Math.random() * 3.5;
      this.size=Math.random() * 1.5+ 1;
