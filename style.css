@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background: black; */
+}
+body{
+    overflow: hidden;
     background: black;
 }
-#canvas1{
+#canvas{
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+/* #canvas1{
     border: 2px solid white;
     top:50%;
     position:absolute ;
@@ -12,4 +22,4 @@
     transform: translate(-50%,-50%);
     width: 500px;
     height:706px ;
-}
+} */
