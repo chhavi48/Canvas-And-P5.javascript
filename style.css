@@ -8,18 +8,18 @@ body{
     overflow: hidden;
     background: black;
 }
-#canvas{
+/* #canvas{
     position: absolute;
     top:0;
     left:0;
 
-}
-/* #canvas1{
-    border: 2px solid white;
+} */
+#canvas1{
+    border: 5px solid white;
     top:50%;
     position:absolute ;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 500px;
-    height:706px ;
-} */
+    width: 600px;
+    height:600px ;
+}
