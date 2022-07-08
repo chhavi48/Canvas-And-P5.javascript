@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+  background-color: #8AC6D0;
+}
+
+.ground {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  left: 0px;
+  top: 390px;
+  background-color: rgb(234, 228, 228)
+}
+
+.body {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+
+.first {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  animation: baseanim 2s linear infinite;
+}
+
+
+.second {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.eyes {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+
+.left-eye {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.right-eye {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.nose {
+  height: 0;
+  width: 0;
+  border-top: 30px solid #eb7e0b;
+  border-right: 6px solid transparent;
+  border-left:6px solid transparent;
+  position: relative;
+  top: 8px;
+  left: -5px;
+  transform: rotate(60deg)
+}
+
+.hat {
+  position: absolute;
+  top: -110px;
+  transform: rotate(10deg);
+  left: 40px;
+}
+
+.top {
+  background-color: black;
+  width: 50px;
+  height: 60px;
+}
+
+/* .rim {
+  left: -15px;
+  position: absolute;
+  background-color: black;
+  width: 80px;
+  height: 10px;
+} */
+
+.buttons {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.button-top {
+  left: 0px;
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.button-middle {
+  left: 0px;
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  border-radius: 50%;
+}
+
+.button-bottom {
+  left: 0px;
+  position: absolute;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  top: 40px;
+  border-radius: 50%;
+}
+
+.arm-left {
+  left: -40px;
+  position: absolute;
+  background-color: brown;
+  width: 50px;
+  height: 6px;
+  top: 10px;
+  transform: rotate(30deg)
+} 
+
+.arm-right {
+  left: 80px;
+  position: absolute;
+  background-color: brown;
+  width: 50px;
+  height: 6px;
+  top: 10px;
+  transform: rotate(-30deg)
+}
+    </style>
+    <body>
+        <div class="body"> 
+          
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="eyes">
+              <div class="left-eye"></div>
+              <div class="right-eye"></div>
+              <div class="nose"></div>
+            </div>
+          <!--   <div class="hat">
+              <div class="top"></div>
+              <div class="rim"></div>
+            </div> -->
+            <div class="buttons">
+              <div class="button-top"></div>
+              <div class="button-middle"></div>
+              <div class="button-bottom"></div>
+            </div>
+            
+            <div class="arm-left"></div>
+            <div class="arm-right"></div>
+          </div>
+          
+          <div class="ground"></div>
+    </body>
+</html>
