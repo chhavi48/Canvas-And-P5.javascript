@@ -12,8 +12,8 @@ p5.js is a JavaScript library for creative coding, with a focus on making coding
 Using the metaphor of a sketch, p5.js has a full set of drawing functionality. However, you’re not limited to your drawing canvas. You can think of your whole browser page as your sketch, including HTML5 objects for text, input, video, webcam, and sound.</p>
 
 <h3>Coming about p5 shaps</h3>
-1. rect(x,y,height,width)
-1. ellipse(x,y,height,width)
-1. line(x1,y1,x2,y2)
-1. arc(x,y,height,width)
-1. point(x,y,height,width)
+. rect(x,y,height,width)<br/>
+. ellipse(x,y,height,width)<br/>
+. line(x1,y1,x2,y2)<br/>
+. arc(x,y,height,width)<br/>
+. point(x,y,height,width)<br/>
