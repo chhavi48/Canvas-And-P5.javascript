@@ -19,7 +19,7 @@
     .frog_body{
         width: 150px;
         height: 170px;
-        background-color: green;
+        background-color: rgb(98, 215, 98);
         border-top-left-radius: 80px;
         border-top-right-radius: 80px;
         padding-top: 3rem;
@@ -29,11 +29,11 @@
 
     }
     .frog_circle{
-        background-color: aliceblue;
+        background-color: #d7fff3;
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border-top: 4x solid green;
+        border-top: 4x solid rgb(98, 215, 98);;
         position: relative;
     }
     .frog_bottom{
@@ -42,14 +42,14 @@
         bottom: 0;
         width: 150px;
         height: 100px;
-        background-color:aliceblue;
+        background-color:#d7fff3;
 
     }
     .frog-left-leg{
         position:absolute;
         left:200px;
          top:250px;
-        background-color:green;
+        background-color:rgb(98, 215, 98);;
         width: 100px;
         height: 120px;
         border-top-right-radius: 200px;
@@ -60,7 +60,7 @@
         position:absolute;
         left:330px;
          top:250px;
-        background-color:green;
+        background-color:rgb(98, 215, 98);;
         width: 100px;
         height: 120px;
         border-top-left-radius: 200px;
@@ -75,20 +75,91 @@
         height: 60px;
         border-radius: 50%;
         z-index: 4;
-        background-color:green;
+        background-color:rgb(98, 215, 98);;
+}
+.frog_eyes::after{
+     content: " ";
+     position: absolute;
+     left: 50%;
+     top:50%;
+     background-color: #d7fff3;
+     width: 40px;
+     height: 40px;
+     border-radius: inherit;
+     transform: translate(-50%,-50%);
+
+}
+.frog_eyes::before{
+    content: " ";
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 25px;
+    height: 25px;
+    z-index:6 ;
+    background-color: #0c2a60;
+    border-radius: inherit;
 
 
-
-    }
+}
     .frog_eyes-right{
         position: absolute;
-      left:50px
+      left:320px;
         top:160px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
         z-index: 4;
-        background-color:green;
+        background-color:rgb(98, 215, 98);;
+    }
+    .frog_eyes_circle{
+        position: absolute;
+        left: 20px;
+        top:20px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #d7fff3;
+    }
+    .frog_finger{
+       background-color: rgb(98, 215, 98);;
+       position: absolute;
+       left: 195px;
+       top:385px;
+      bottom: 0;
+      width: 100px;
+      height: 10px;
+    }
+    .frog-finger-right{
+        background-color: rgb(98, 215, 98);;
+       position: absolute;
+       left: 320px;
+       top:385px;
+      bottom: 0;
+      width: 100px;
+      height: 10px;
+
+    }
+    .frog-finger-right::after{
+        content: " ";
+        position: absolute;
+        left:80px;
+        top:-10px;
+        width: 35px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(98, 215, 98);;
+    }
+    .frog_finger::after{
+        content: " ";
+        position: absolute;
+        left:0;
+        top:-100%;
+        width: 35px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(98, 215, 98);;
     }
 
     </style>
@@ -108,6 +179,7 @@
             <div class="frog_bottom"></div>
         </div>
 
+         <div class="frog_finger"></div>
         <div class="frog-left-leg"></div>
         <div class="frog-right-leg"></div>
         <div class="frog-finger-left"></div>
