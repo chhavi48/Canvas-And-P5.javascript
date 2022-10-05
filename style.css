@@ -1,13 +1,13 @@
-*{
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: black; */
-}
-body{
+    
+}  */
+/* body{
     overflow: hidden;
     background: black;
-}
+} */
 /* #canvas{
     position: absolute;
     top:0;
@@ -23,3 +23,44 @@ body{
     width: 600px;
     height:600px ;
 } */
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.editor{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background: gray; */
+
+}
+.toolbar{
+    width: 250px;
+    background: #eeeeee;
+}
+.toolbar-item{
+    padding: 15px;
+
+}
+.tool-label{
+       display: block;
+       margin-bottom: 5px;
+       font-size: 14px;
+       font-weight: bold;
+
+}
+.tool-input{
+    width: 100%;
+}
+.image-area{
+    flex-grow: 1;
+    padding: 20px;
+    background: gray;
+}
+#canvas{
+     max-width: 100%;
+     max-height: 100%;
+     
+
+}

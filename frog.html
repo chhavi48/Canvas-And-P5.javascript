@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: black;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .frog_body{
+        width: 150px;
+        height: 170px;
+        background-color: green;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        padding-top: 3rem;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+
+    }
+    .frog_circle{
+        background-color: aliceblue;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-top: 4x solid green;
+    }
+    .frog_bottom{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 150px;
+        width: 100px;
+        background-color: #acdf5e9;
+
+    }
+
+    </style>
+</head>
+<body>
+     <div class="frog">
+        <div class="frog_eyes">
+            <div class="frog_eyes_circle"></div>
+        </div>
+
+        <div class="frog_eyes frog_eyes-right">
+            <div class="frog_eyes_circle frog_eyes_circle_right"></div>
+        </div>
+
+        <div class="frog_body">
+            <div class="frog_circle"></div>
+            <div class="frog_bottom"></div>
+        </div>
+    </div> 
+</body>
+</html>

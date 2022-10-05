@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
     <script src="sanak.js"></script>
@@ -8,10 +8,9 @@
     <main>
     </main>
   </body>
-</html>
+</html> -->
 
-
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,14 +18,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="edit.js"></script>
 </head>
 <body>
-    <canvas id="canvas1">
+  <div class="editor">
+      <div class="toolbar">
+        <div class="toolbar-item">
+          <input type="file" id="imageFileInput">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="brightness">Brightness</label>
+          <input class="tool-input" type="range" id="brightness" min="0" max="200">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="saturation">Saturation</label>
+          <input class="tool-input" type="range" id="saturation" min="0" max="200">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="blur">Blur</label>
+          <input class="tool-input" type="range" id="blur" min="0" max="25">
+        </div>
+        <div class="toolbar-item">
+          <label class="tool-label" for="inversion">Inversion</label>
+          <input class="tool-input" type="range" id="inversion" min="0" max="100">
+        </div>
+      </div>
+      <div class="image-area">
+        <canvas id="canvas" height="500" width="500"></canvas>
+      </div>
+    </div>
+
+    <!-- <canvas id="canvas1">
         
-    </canvas> -->
+    </canvas>  -->
     <!-- <canvas id="canvas1">
         
     </canvas> -->
-    <!-- <script src="script1.js"></script>
+  <!-- <script src="script1.js"></script> -->
 </body>
-</html> -->
+</html> 
