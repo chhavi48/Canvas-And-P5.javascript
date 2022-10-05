@@ -34,15 +34,61 @@
         height: 150px;
         border-radius: 50%;
         border-top: 4x solid green;
+        position: relative;
     }
     .frog_bottom{
         position: absolute;
         left: 0;
         bottom: 0;
         width: 150px;
-        width: 100px;
-        background-color: #acdf5e9;
+        height: 100px;
+        background-color:aliceblue;
 
+    }
+    .frog-left-leg{
+        position:absolute;
+        left:200px;
+         top:250px;
+        background-color:green;
+        width: 100px;
+        height: 120px;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius:200px ;
+        transform: rotate(-2deg);
+    }
+    .frog-right-leg{
+        position:absolute;
+        left:330px;
+         top:250px;
+        background-color:green;
+        width: 100px;
+        height: 120px;
+        border-top-left-radius: 200px;
+        border-bottom-right-radius:200px ;
+        transform: rotate(-2deg);
+    }
+    .frog_eyes{
+        position: absolute;
+    
+        top:160px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: 4;
+        background-color:green;
+
+
+
+    }
+    .frog_eyes-right{
+        position: absolute;
+      left:50px
+        top:160px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: 4;
+        background-color:green;
     }
 
     </style>
@@ -61,6 +107,11 @@
             <div class="frog_circle"></div>
             <div class="frog_bottom"></div>
         </div>
+
+        <div class="frog-left-leg"></div>
+        <div class="frog-right-leg"></div>
+        <div class="frog-finger-left"></div>
+        <div class="frog-finger-right"></div>
     </div> 
 </body>
 </html>
