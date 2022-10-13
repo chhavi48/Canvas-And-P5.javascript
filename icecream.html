@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:rgb(108, 176, 224);
+}
+.container {
+  height: 600px;
+  width: 700px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.icecream {
+  width: 180px;
+  height: 300px;
+  position: relative;
+  top: 45px;
+  border-radius: 90px 90px 20px 20px;
+}
+.icecream:before {
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  right: 20px;
+  top: 60px;
+}
+.icecream:after {
+  position: absolute;
+  content: "";
+  height: 180px;
+  width: 30px;
+  background-color: #dba55b;
+  top: 300px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+}
+.icecream-1 {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #521a01 0,
+    #ff7eaf 20px,
+    #ff0565 20px,
+    #ff0565 40px
+  );
+}
+.icecream-2 {
+  background-size: 60px 300px;
+  background-image: radial-gradient(
+    circle at 30px 53px,
+    #521a01 80px,
+    #d0020f 81px
+  );
+}
+.icecream-3 {
+  background-color: #d0020f;
+  background-image: radial-gradient(#c39a6b 4px, transparent 4px);
+  background-size: 30px 30px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="icecream icecream-1"></div>
+        <div class="icecream icecream-2"></div>
+        <div class="icecream icecream-3"></div>
+      </div>
+</body>
+</html>
