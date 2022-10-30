@@ -1,11 +1,30 @@
 body{
     width: 100%;
     height: 100%;
-    background: linear-gradient(400deg,
-    #331a1d 0%,
-    #503336 100%);
+    background-color: black;
     overflow: hidden;
-    margin-top: 30%;
+    margin-top: 15%;
+}
+#outer{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+    
+
+}
+@keyframes outerlight {
+    0%{
+        background-color: #967532;
+    }
+    50%{
+        background-color: #bdcf56;
+    }
+
+    100%{
+        background-color: #e05539;
+    }
+    
 }
 .pumpkin{
 
@@ -50,3 +69,241 @@ body{
     left: 50%;
     background-color: #7b6200;
 }
+.eye{
+
+    width: 25px;
+    height: 30px;
+    background:#967532 ;
+    position: absolute;
+    top: 10px;
+    right: 60%;
+    border-radius: 100% 0 0 50%;
+    box-shadow: inset 3px 5px 0 rgba(0 ,0, 0, 0.2);
+    transition: rotate(-15deg);
+    animation:eyeanim 3s infinite;
+}
+.eye::after{
+    width: 25px;
+    height: 30px;
+    background:#967532 ;
+    position: absolute;
+    animation:eyeanim 3s infinite;
+    right: 60%;
+    border-radius: 100% 0 0 50%;
+    box-shadow: inset 3px 5px 0 rgba(0 ,0, 0, 0.2);
+    transform: translateX(63px) scaleX(-1) rotate(-30deg) translateY(2px);
+    content: "";
+}
+.mouth{
+    position: absolute;
+    animation: hasna 0.7s infinite;
+    width: 90px;
+    height: 30px;
+    background-color: #967532;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 30px 30px;
+    box-shadow:inset 4px 4px 0px rgba(0,0,0,0.2);
+
+}
+.mouth::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 24%;
+    width: 1px;
+    height: 1px;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 13px solid #f6ad60;
+    ;
+
+}
+.mouth::after{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 24%;
+    width: 1px;
+    height: 1px;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 13px solid #f18b36;
+    ;
+
+}
+.eye, .eye::after {
+ animation:eyeanim 3s infinite;
+}
+@keyframes eyeanim{
+    0%{
+       background:#a24d13 ;
+     }
+     50%{
+        height: 1.5em;
+     }
+     20%{
+        background: #967532;
+     }
+    
+}
+@keyframes hasna {
+    50%{
+       height: 1.5em;
+       background-color: #a24d13;
+    }
+    
+}
+
+
+#container {
+    width: 400px;
+    height: 400px;
+    margin-top: -15%;
+    box-sizing: border-box;
+  
+    margin-left: 10%;
+  }
+  #container1 {
+    width: 400px;
+    height: 400px;
+    margin-top: -35%;
+    box-sizing: border-box;
+    margin-left: 60%;
+
+  }
+  
+  *:after,
+  *:before {
+    
+    box-sizing: inherit;
+  }
+  
+  /*body positiong*/
+  #ghost {
+    margin: 10% auto;
+    width: 70%;
+    height: 70%;
+    animation: floaty 2s infinite;
+  }
+  
+  /*ghost body*/
+  #ghost #body {
+    
+    position: relative;
+    margin: 50px auto 0;
+    width: 180px;
+    height: 220px;
+    background: white;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    
+  }
+  
+  /*ghost arms*/
+  #ghost #body:before, 
+  #ghost #body:after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background:white;
+    animation: floaty .2s infinite;
+    
+  
+  
+  }
+  /*left arm*/
+  #ghost #body:before{
+    left: -18px;
+  }
+  /*right arm*/
+  #ghost #body:after{
+    right: -18px;
+  }
+  /*eyes*/
+  #ghost #body #eyes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    width: 80px;
+    height: 20px;
+  }
+  /*eyes*/
+  #ghost #body #eyes:before, 
+  #ghost #body #eyes:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    
+  }
+  /*mouth*/
+  #ghost #body #mouth {
+    background: black;
+    margin: 25px auto 0;
+    width: 60px;
+    height: 30px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 30px;
+    
+  }
+  /* ghost legs*/
+  #ghost #body #mouth:before{
+    content: '';
+    display: block;
+    background: f2bf1;
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+   
+  }
+  
+  #ghost #body #feet {
+    position: absolute;
+    display: flex;
+    bottom: -18px;
+    width: 180px;
+    height: 36px;
+    left: .5px;
+  }
+  
+  /*ghost feet*/
+  #ghost #body #feet > * ,
+  #ghost #body #feet:before ,
+  #ghost #body #feet:after {
+    
+    content: '';
+    width: 36px;
+    height: 36px;
+    background:black;
+    border-radius: 50%;  
+  }
+  
+  @keyframes floaty {
+    0%, 100% {
+      transform: translateY(0);
+      
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+  }
+ 
+  @keyframes zoomy {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+  }
