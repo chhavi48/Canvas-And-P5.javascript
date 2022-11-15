@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sheep</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:lightgreen;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            /* border: 1px solid black; */
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top:50%;
+            left: 50%;
+        }
+        .body{
+            height: 240px;
+            width: 240px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top:100px;
+
+
+        }
+        .body:before{
+            content: "";
+            position: absolute;
+            height: 75.5px;
+            width: 75.5px;
+            background-color:#ffffff;
+            border-radius: 50%;
+            left:80px;
+         top:-25px;
+        box-shadow: 0 215px #ffffff,
+        107px 107px #ffffff,
+        -107px 107px #ffffff,
+    -50px 15px #ffffff ,
+    50px 15px #ffffff,
+     -88px 50px #ffffff,
+    88px 50px #ffffff,
+    -50px 200px #ffffff,
+    50px 200px #ffffff,
+    -88px 160px #ffffff,
+      88px 160px #ffffff;
+            }
+            .face{
+                background-color: #505050;
+                width: 80px;
+                height: 100px;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top:70px;
+                border-radius: 30px;
+            }
+            .ears{
+                position: absolute;
+                background-color: #303030;
+                height: 50px;
+                width: 50px;
+                border-radius: 45px 0;
+                top:0;
+                left: -40px;
+
+            }
+            .ears:before{
+                position: absolute;
+                content: "";
+                background-color: #303030;
+                height: 50px;
+                width: 50px;
+                border-radius: 0 45px;
+                top:0;
+                left:110px;
+
+            }
+            .eyes{
+                position: absolute;
+                background-color: #252525;
+                height: 10px;
+                width: 10px;
+                left:10px;
+                top:5px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 15px #ffffff,
+                0 0 0 20px #505050;
+
+            }
+            .eyes:before{
+                position: absolute;
+                content: "";
+                background-color: #252525;
+                height: 10px;
+                width: 10px;
+                left:47px;
+               
+                border-radius: 50%;
+                box-shadow: 0 0 0 15px #ffffff,
+                0 0 0 20px #505050;
+
+            }
+        .nose{
+              position: absolute;
+              background-color: #404040;
+              width:10px;
+              width: 16px;
+              left: 32px;
+              top:60px;
+              border-radius: 3px 3px 0 0 ;
+              border-bottom: 3.5px solid #252525;
+        }
+        .nose:before{
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 5px;
+            background-color:#252525;
+            left: 6.5px;
+            top:10px;
+
+        }
+        .legs{
+             position: absolute;
+             background-color: #505050;
+             height: 80px;
+             width: 20px;
+             left: 180px;
+             top:310px;
+             box-shadow: 110px 0 #505050;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="legs"></div>
+        <div class="body">
+      <div class="face">
+        <div class="ears"></div>
+        <div class="eyes"></div>
+<div class="nose"></div>
+      </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+    
+</body>
+</html>
