@@ -4,15 +4,19 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #b1ea7c;
+       background-size:cover;
+         /* background-position: right; */
+    background-repeat: no-repeat;
+    background-image: url("bg.jpg");
+    /* background-color: #b1ea7c; */
   }
   .container {
     width: 31.25em;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translateX(10%);
     left: 50%;
     margin: 1em auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-shadow: 0 0 0 0.62em #ffffff, 0 1.25em 3.12em rgb(83, 66, 15, 0.5);
     background-color: #ffffff;
     border-radius: 0.5em;

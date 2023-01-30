@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BATTEL</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="white-keys">
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+        <div class="white"></div>
+    </div>
+
+    <div class="black-keys">
+        <div class="black empty"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+        <div class="black"></div>
+    
+        <div class="black"></div>
+        <div class="black"></div>
+        
+    </div>
+
+</div>
+
+</body>
+<script>
+    
+       var should_play=true
+    window.onclick = () => {
+        if (should_play){
+            should_play=!should_play
+            let soundSource = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+            let sound = new Audio(soundSource);
+            sound.play();
+            sound.onended = () => {
+                should_play=true
+            }
+        }
+
+    }
+</script>
+</html>
