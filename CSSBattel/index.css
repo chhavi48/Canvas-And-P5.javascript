@@ -35,12 +35,44 @@
 .black{
     background: black;
     width: 15px;
+    
     /* border-radius: 5px; */
     /* height: 30px; */
 
 }
+
 .empty{
     background: none ;
+}
+.black1{
+    background: black;
+    width: 15px;
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    0%{
+        background: none;
+
+    }
+    10%{
+        background:black;
+    }
+    20%{
+        background:none;
+    }
+    40%{
+        background: none;
+    }
+    60%{
+        background: black;
+    }
+    80%{
+        background: none;
+    }
+    100%{
+        background: black;
+    }
 }
 .wrapper {
     display: flex;
@@ -53,4 +85,90 @@
 *{
     box-sizing: border-box;
     
+}
+
+.black2{
+    background: black;
+    width: 15px;
+    animation: anim2 5s infinite;
+}
+
+@keyframes anim2 {
+    10%{
+        background: none;
+
+    }
+    20%{
+        background:black;
+    }
+    30%{
+        background:none;
+    }
+    50%{
+        background: black;
+    }
+    60%{
+        background: black;
+    }
+    80%{
+        background: none;
+    }
+    90%{
+        background: black;
+    }
+    100%{
+        background: black;
+    }
+}
+
+.black3{
+    background: black;
+    width: 15px;
+    animation: anim3 5s infinite;
+}
+
+@keyframes anim3 {
+    0%{
+        background: none;
+
+    }
+    50%{
+        background:black;
+    }
+    
+    100%{
+        background: black;
+    }
+}
+
+.black4{
+    background: black;
+    width: 15px;
+    animation: anim4 5s infinite;
+}
+
+@keyframes anim4 {
+    0%{
+        background: none;
+
+    }
+    15%{
+        background:black;
+    }
+    
+    30%{
+        background:none
+    }
+    45%{
+          background: black;
+    }
+    60%{
+         background: none;
+    }
+    75%{
+        background: black;
+    }
+    90%{
+         background: none;
+    }
 }

@@ -21,12 +21,12 @@
 
     <div class="black-keys">
         <div class="black empty"></div>
+        <div class="black1"></div>
         <div class="black"></div>
-        <div class="black"></div>
-        <div class="black"></div>
+        <div class="black2"></div>
     
-        <div class="black"></div>
-        <div class="black"></div>
+        <div class="black3"></div>
+        <div class="black4"></div>
         
     </div>
 
@@ -39,7 +39,7 @@
     window.onclick = () => {
         if (should_play){
             should_play=!should_play
-            let soundSource = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+            let soundSource = "song.mp3";
             let sound = new Audio(soundSource);
             sound.play();
             sound.onended = () => {
