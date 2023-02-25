@@ -7,7 +7,7 @@
 }
 body{
     
-    background-color: rgb(73, 170, 235);
+    background-color: rgb(19, 78, 50);
 }
 .bee{
     height: 100px;
@@ -100,7 +100,7 @@ body{
      height: 40px;
      width: 80px;
      background: radial-gradient(circle at 50% 100%,
-     #ff90a3 15px , #202020 16px);
+     #ef072e 15px , #202020 16px);
      top: 20px;
      left: 93px;
      border-radius: 0 0 40px 40px;
