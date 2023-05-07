@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: rgb(82, 140, 217);
 }
 .outer{
     height: 550px;
@@ -31,4 +31,105 @@ body{
     right: 0;
     top: 260px;
     border: 1px solid black;
+}
+.body{
+    position: absolute;
+    height: 65px;
+    width: 100px;
+    background-color: #FFec02;
+    border-radius: 100px 100px 0  0;
+    top: -2px;
+}
+.body::before{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 150px;
+    background-color: #FFec02;
+    top: 65px;
+    right: 0;
+    border-radius: 15px 0 150px 150px;
+
+}
+.wings{
+    height: 37px;
+    width: 74px;
+    background-color: #FFce00;
+    position: absolute;
+    top: 55px;
+    left: -40px;
+    border-radius: 10px 10px 74px 74px;
+    transform-origin: right;
+}
+.beak{
+  position: absolute;
+  background-color: #f17c00;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  top: 30px;
+  left: 68px;
+  transform: skewX(30deg) rotate(-25deg);
+  z-index: -1;
+}
+.lleg,.rleg{
+    height: 50px;
+    width: 13px;
+    background-color: #f17c00;
+    position: absolute;
+    top: 100px;
+    left: 35px;
+    transform-origin: top;
+    transform: rotate(-45deg);
+    z-index: -1;
+
+}
+.lleg::before,
+.rleg::before{
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 40px;
+    background-color: #f17c00;
+    right: -20px;
+    top: 50px;
+    border-radius: 40px;
+}
+.eye{
+    background-color: #1c1c1c;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 32px;
+    left: 65px;
+    border-radius: 20px;
+    transform-origin: bottom;
+
+}
+.blush{
+    background-color: rgb(241,124,0,0.5);
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 48px;
+    left: 46px;
+}
+.feather{
+    height:35px ;
+    width: 12px;
+    border-radius: 35px;
+    background-color: #ffec02;
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    transform: rotate(-15deg);
+
+}
+.feather::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 12px;
+
 }
