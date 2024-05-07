@@ -1,0 +1,68 @@
+body {
+    background: rgb(54, 53, 52);
+    overflow: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .hangings {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  
+  .hangings__image {
+    padding: 0.5rem 0.5rem 1.5rem;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform-origin: center -5rem;
+  }
+  
+  .hangings__image::before {
+    content: '';
+    display: block;
+    height: 10rem;
+    width: 2px;
+    background: saddlebrown;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+  }
+  
+  .hangings__image:nth-child(1) {
+    animation: image1 5s infinite ease-in-out;
+    transform: rotate(-10deg);
+  }
+  
+  .hangings__image:nth-child(2) {
+    animation: image2 4.5s infinite ease-in-out;
+    transform: rotate(8deg);
+  }
+  
+  .hangings__image:nth-child(3) {
+    animation: image3 4s infinite ease-in-out;
+    transform: rotate(-4deg);
+  }
+  
+  @keyframes image1 {
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes image2 {
+    50% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  @keyframes image3 {
+    50% {
+      transform: rotate(6deg);
+    }
+  }
+  
